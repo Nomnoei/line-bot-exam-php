@@ -47,7 +47,7 @@ if (!is_null($events['events'])) {
 			echo $result . "\r\n";
 		}
 
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text' &&  $event['message']['text'] == 'id' ||  $event['message']['text'] == 'user'  ) {
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' &&  $event['message']['text'] == 'id' ||  $event['message']['text'] == 'user' ) {
 			// Get text sent
 			$text = $event['source']['userId'];
 			// Get replyToken
@@ -79,9 +79,6 @@ if (!is_null($events['events'])) {
 
 			echo $result . "\r\n";
 		}
-
-
-
 
 
 
